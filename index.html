@@ -16,60 +16,79 @@
 		
 		<div class="jumbotron">
 		  <h1 class="display-3">It's a Gemmy Gem World!</h1>
-		  <p class="lead">How to play:<br><br> You will be given a random number at the start of the game <br><br> There are four crystals below. By clicking on a crystal you will add a specify amount of points to your total score. <br> <br>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. <br><br> The value of each crystal is hidden from you until you click on it. <br><br> Each time when the game states, the game will change the values of each crystal.<!-- Click the gems of your choice to try and match the total score of the random number --> </p>
+		  <p class="lead">How to play:<br>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.<!-- Click the gems of your choice to try and match the total score of the random number --> </p>
 		  <hr class="m-y-2">
-		  <p>Interested? Your challenege awaits! <br>CLICK A GEM!</p>
+		  <p>Interested? Your challenge awaits! CLICK A GEM!</p>
 		</div>
 
 		<div class="row">
 		 		<div class="col-md-2"></div>
 			  <div class="col-md-2">
-						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/diamond-crystal-sm.png" alt="diamond" class="img-rounded img-responsive jewelOne">
+						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/small/diamond-crystal-sm.png" alt="diamond" class="img-rounded img-responsive jewel-one" id="blue">
 			  </div>
-			  			  <div class="col-md-2">
-						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/diamond-crystal-sm.png" alt="diamond" class="img-rounded img-responsive jewelOne">
+			  		<div class="col-md-2">
+						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/small/green-crystal-sm.png" alt="greenCrystal" class="img-rounded img-responsive jewel-two" id="green">
 			  </div>
-			  			  <div class="col-md-2">
-						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/diamond-crystal-sm.png" alt="diamond" class="img-rounded img-responsive jewelOne">
+			  		<div class="col-md-2">
+						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/small/pink-crystal-sm.png" alt="pinkGem" class="img-rounded img-responsive jewel-three" id="pink">
 			  </div>
-			  			  <div class="col-md-2">
-						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/diamond-crystal-sm.png" alt="diamond" class="img-rounded img-responsive jewelOne">
+			  		<div class="col-md-2">
+						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/small/yellow-crystal-sm.png" alt="yellowCrystal" class="img-rounded img-responsive jewel-four" id="yellow">
 			  </div>
 			  <div class="col-md-2"></div>
 		</div>
 
+		<br><br>
 
+			<div class="row">
+			  <div class="col-md-3">
+			    <div class="panel panel-primary">
+			    	<div class="panel-heading">
+			      	<h3 class="panel-title">Your Total Score</h3>
+			    	</div>
+			    	<div class="panel-body">
+			      	<span id="yourScore"></span>
+			    	</div>
+			  	</div>
+		   </div> 
+
+		   <div class="col-md-3">
+			    <div class="panel panel-info">
+			      	<div class="panel-heading">
+			        	<h3 class="panel-title">Crystal Count</h3>
+			      	</div>
+			      	<div class="panel-body">
+			        	<span id="crystalCounter"></span>
+			      	</div>
+			  	</div>
+		   </div>
+
+		    <div class="col-md-3">
+			    <div class="panel panel-success">
+			      	<div class="panel-heading">
+			        	<h3 class="panel-title">Win Counter</h3>
+			      	</div>
+			      	<div class="panel-body">
+			        	<span id="winCounter"></span>
+			      	</div>
+			  	</div>
+		    </div>
+
+			  <div class="col-md-3">
+			    <div class="panel panel-danger">
+			    	<div class="panel-heading">
+			      	<h3 class="panel-title">Loss Counter</h3>
+			    	</div>
+			    	<div class="panel-body">
+			      	<span id="lossCounter"></span>
+			    	</div>
+			  	</div>
+		   	</div> 
 	</div>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"> </script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-<!-- 
-
-<div class="row">
-			  <div class="col-md-3">
-			  		<span id="jewel-one"></span>
-						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/diamond-crystal.png" alt="diamond" class="img-rounded">
-			  </div>
-			  <div class="col-md-3">
-			  		<span id="jewel-one"></span>
-						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/diamond-crystal.png" alt="diamond" class="img-rounded">
-			  </div>
-			  <div class="col-md-3">
-			  		<span id="jewel-one"></span>
-						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/diamond-crystal.png" alt="diamond" class="img-rounded">
-			  </div>
-			  <div class="col-md-3">
-			  		<span id="jewel-one"></span>
-						<img src="https://raw.githubusercontent.com/kaylaludmila/week-4-game/master/assets/images/diamond-crystal.png" alt="diamond" class="img-rounded">
-			  </div>
-			  </div>
-			  </div> -->
